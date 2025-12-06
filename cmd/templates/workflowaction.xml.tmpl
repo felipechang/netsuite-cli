@@ -1,0 +1,25 @@
+<workflowactionscript scriptid="{{.ScriptId}}">
+  <description>{{.Description}}</description>
+  <isinactive>F</isinactive>
+  <name>{{.ScriptName}}</name>
+  <notifyadmins>F</notifyadmins>
+  <notifyemails></notifyemails>
+  <notifyowner>T</notifyowner>
+  <notifyuser>F</notifyuser>
+  <returnrecordtype></returnrecordtype>
+  <returntype></returntype>
+  <scriptfile>[{{.ScriptPath}}]</scriptfile>
+  <scriptdeployments>
+    <scriptdeployment scriptid="{{.DeploymentId}}">
+      <allemployees>F</allemployees>
+      <allpartners>F</allpartners>
+      <allroles>T</allroles>
+      <audslctrole></audslctrole>
+      <isdeployed>T</isdeployed>
+      <loglevel>ERROR</loglevel>
+      <recordtype>{{.RecordType}}</recordtype>
+      <runasrole>ADMINISTRATOR</runasrole>
+      <status>RELEASED</status>
+    </scriptdeployment>
+  </scriptdeployments>
+</workflowactionscript>

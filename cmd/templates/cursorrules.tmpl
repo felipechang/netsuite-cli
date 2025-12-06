@@ -1,0 +1,40 @@
+# NetSuite CLI Project Rules
+
+This project uses the `netsuite-cli` tool to manage NetSuite scripts and configurations.
+
+## Project Structure
+- `src/FileCabinet/SuiteScripts`: Contains your SuiteScripts.
+- `src/Objects`: Contains your NetSuite Objects (XML definitions).
+- `suitecloud.config.js`: SuiteCloud CLI configuration.
+- `package.json`: Project dependencies.
+
+## Available Commands
+
+### Create a new project
+To create a new project, run:
+`netsuite-cli create`
+
+### Add a new script
+To add a new script, use the `add` command followed by the script type:
+`netsuite-cli add <type> [name]`
+
+Available script types:
+- `bundle`: Bundle Installation Script
+- `client`: Client Script
+- `formclient`: Form Client Script
+- `mapreduce`: Map/Reduce Script
+- `massupdate`: Mass Update Script
+- `portlet`: Portlet Script
+- `restlet`: RESTlet
+- `scheduled`: Scheduled Script
+- `suitelet`: Suitelet
+- `userevent`: User Event Script
+- `workflowaction`: Workflow Action Script
+- `common`: Common TypeScript definitions
+
+Example: `netsuite-cli add suitelet MySuitelet`
+
+## Development Workflow
+1.  Create or add scripts using `netsuite-cli add`.
+2.  Develop your TypeScript code in `src/FileCabinet/SuiteScripts`.
+3.  Deploy using SuiteCloud CLI commands (e.g., `suitecloud project:deploy`).

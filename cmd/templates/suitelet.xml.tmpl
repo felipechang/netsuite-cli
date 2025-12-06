@@ -1,0 +1,25 @@
+<suitelet scriptid="{{.ScriptId}}">
+  <description>{{.Description}}</description>
+  <isinactive>F</isinactive>
+  <name>{{.ScriptName}}</name>
+  <notifyadmins>F</notifyadmins>
+  <notifyemails></notifyemails>
+  <notifyowner>T</notifyowner>
+  <notifyuser>F</notifyuser>
+  <scriptfile>[{{.ScriptPath}}]</scriptfile>
+  <scriptdeployments>
+    <scriptdeployment scriptid="{{.DeploymentId}}">
+      <allemployees>T</allemployees>
+      <allpartners>F</allpartners>
+      <allroles>F</allroles>
+      <audslctrole></audslctrole>
+      <eventtype></eventtype>
+      <isdeployed>T</isdeployed>
+      <isonline>F</isonline>
+      <loglevel>ERROR</loglevel>
+      <runasrole>ADMINISTRATOR</runasrole>
+      <status>RELEASED</status>
+      <title>{{.ScriptName}}</title>
+    </scriptdeployment>
+  </scriptdeployments>
+</suitelet>

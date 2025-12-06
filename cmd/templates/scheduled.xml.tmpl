@@ -1,0 +1,24 @@
+<scheduledscript scriptid="{{.ScriptId}}">
+  <description>{{.Description}}</description>
+  <isinactive>F</isinactive>
+  <name>{{.ScriptName}}</name>
+  <notifyadmins>F</notifyadmins>
+  <notifyemails></notifyemails>
+  <notifyowner>T</notifyowner>
+  <scriptfile>[{{.ScriptPath}}]</scriptfile>
+  <scriptdeployments>
+    <scriptdeployment scriptid="{{.DeploymentId}}">
+      <isdeployed>T</isdeployed>
+      <loglevel>DEBUG</loglevel>
+      <status>NOTSCHEDULED</status>
+      <title>{{.ScriptName}}</title>
+      <recurrence>
+        <single>
+          <repeat></repeat>
+          <startdate>{{.Date}}</startdate>
+          <starttime>23:00:00Z</starttime>
+        </single>
+      </recurrence>
+    </scriptdeployment>
+  </scriptdeployments>
+</scheduledscript>

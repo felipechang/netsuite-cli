@@ -1,0 +1,17 @@
+{
+  "name": "{{.ProjectName}}",
+  "version": "1.0.0",
+  "scripts": {
+    "import": "cd src && suitecloud object:import -i",
+    "list": "cd src && suitecloud object:list -i",
+    "update": "cd src && suitecloud object:update -i",
+    "deploy": "tsc && cd src && suitecloud project:deploy -i",
+    "package": "cd src && suitecloud project:package",
+    "validate": "cd src && suitecloud project:adddependencies && suitecloud project:validate -i"
+  },
+  "devDependencies": {
+    "@hitc/netsuite-types": "^2025.2.10",
+    "@types/node": "^24.10.1",
+    "typescript": "^5.9.3"
+  }
+}

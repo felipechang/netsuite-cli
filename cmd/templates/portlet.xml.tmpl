@@ -1,0 +1,25 @@
+<portlet scriptid="{{.ScriptId}}">
+  <description>{{.Description}}</description>
+  <isinactive>F</isinactive>
+  <name>{{.ScriptName}}</name>
+  <notifyadmins>F</notifyadmins>
+  <notifyemails></notifyemails>
+  <notifyowner>T</notifyowner>
+  <notifyuser>F</notifyuser>
+  <portlettype>HTML</portlettype>
+  <scriptfile>[{{.ScriptPath}}]</scriptfile>
+  <scriptdeployments>
+    <scriptdeployment scriptid="{{.DeploymentId}}">
+      <allemployees>T</allemployees>
+      <allpartners>F</allpartners>
+      <allroles>F</allroles>
+      <audslctrole></audslctrole>
+      <dashboardapp>F</dashboardapp>
+      <isdeployed>T</isdeployed>
+      <loglevel>ERROR</loglevel>
+      <runasrole></runasrole>
+      <status>RELEASED</status>
+      <title>{{.ScriptName}}</title>
+    </scriptdeployment>
+  </scriptdeployments>
+</portlet>
