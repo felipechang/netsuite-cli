@@ -25,15 +25,12 @@ Before using `netsuite-cli`, ensure you have the following installed:
 To install the NetSuite CLI, run:
 
 ```bash
-go install github.com/yourusername/netsuite-cli@latest
+go install github.com/felipechang/netsuite-cli@latest
 ```
-
-*Note: Replace `yourusername` with the actual repository owner.*
-
 Alternatively, you can build it from source:
 
 ```bash
-git clone https://github.com/yourusername/netsuite-cli.git
+git clone https://github.com/felipechang/netsuite-cli.git
 cd netsuite-cli
 go install
 ```
